@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 export default function NotFound() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-6 bg-slate-950 px-6 py-16 text-center text-slate-100">
@@ -10,12 +8,12 @@ export default function NotFound() {
           The page you&apos;re looking for doesn&apos;t exist or has been moved. Try heading back to the dashboard to continue racing.
         </p>
       </div>
-      <Link
+      <a
         href="/"
         className="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-500"
       >
         Return to home
-      </Link>
+      </a>
     </main>
   )
 }
